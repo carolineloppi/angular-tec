@@ -1,0 +1,23 @@
+<h3>Exemplo de Interpolação</h3>
+<p>Lista de Cursos do Portal {{nomePortal}}</p>
+
+
+<h3>Uso da Diretiva NgFor</h3>
+<ul>
+  <li *ngFor="let curso of cursos">{{curso}}</li>
+</ul>
+<hr>
+<hr>
+
+
+<h3> Inclusão de Componente Filho</h3>
+<app-curso-detalhe></app-curso-detalhe>
+<hr>
+<hr>
+
+<h3> Visibilidade de Componentes</h3>
+<p>
+  O Componente CursoDetalheComponent está privado para 'cursosModule'. <br/><br/>
+  Para ser usado externamente, devemos exportá-lo em 'exports' no arquivo cursos.module.ts. <br/><br/>
+  Nenhum outro módulo pode usar este componente.
+</p>
